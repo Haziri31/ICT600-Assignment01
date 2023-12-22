@@ -1,0 +1,139 @@
+/* Styling for header.php */
+.navbar-brand
+{
+    margin-left: 50px;
+    margin-right: 69px;
+    color: white;
+    text-shadow: 0 0 5px #dc143c;
+}
+.navbar-nav .nav-item .nav-link
+{
+    color: black;
+    margin-left: -18px;
+    margin-right: 35px;
+    position: relative;
+}
+.navbar-nav .nav-item .nav-link::before
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background-color:#918C8C;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.navbar-nav .nav-item:last-child .nav-link::before
+{
+    display: none;
+}
+.navbar-nav .nav-item .nav-link:hover
+{
+    color: #ec048c;
+}
+.navbar-nav .nav-item .nav-link.active, .navbar-nav .nav-item .nav-link:focus
+{
+    color: #dc143c;
+}
+.navbar-nav .nav-item .nav-link.active::after
+{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-color: #dc143c;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+.navbar-nav ml-auto
+{
+    margin-right: 5px;
+}
+
+/* Styling for index.php */
+.profile
+{
+    text-align : center;
+}
+.prof-image, .prof-list
+{
+    display : inline-block;
+}
+.prof-image
+{
+    height: 420px;
+    width: 320px;
+}
+.prof-list
+{
+    text-align : left;
+}
+
+/* Styling for form*.php */
+.outer, .accordion
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header2
+{
+    text-align : center;
+}
+.error
+{
+    color : #FF0000;
+}
+.accordion-body1, .accordion-body2, .accordion-body3, .accordion-body4, .accordion-body5, .accordion-body6
+{
+    margin-left : 45px;
+    color : rgb(0, 0, 0);
+    background-color : white;
+}
+table, th, tr, td
+{
+    border : 1px solid black;
+    text-align : center;
+    min-width : 110px;
+    text-align : center;
+}
+.inputShort
+{
+    width : 130px;
+}
+.inputMedium
+{
+    width : 200px;
+}
+.inputLong
+{
+    width : 400px;
+}
+.submit
+{
+    background-image : linear-gradient(to right, #ff0000, #ff0019, #ff0303);
+    color : #FFFFFF;
+    font-weight : bold;
+    font-family : sans-serif;
+    padding : 10px 20px;
+    border-radius : 10px;
+    box-shadow : 2px 2px 5px #888888;
+    display : block;
+    margin : 0 auto;
+    width : 180px;
+}
+.submit:hover
+{
+    background-image :  linear-gradient(to right, #b50808, #a5070f, #880921);
+}
+
+/* Styling for footer.php */
+.copyright, .privacy
+{
+    color : gray;
+}
